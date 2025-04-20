@@ -1,0 +1,90 @@
+Date,Request Number,Request_Type,Request_VIP,Violation Reason,Justified
+2/18/2024,REQ77237,Incident,Yes,"Incident resolved Within SLA, but breached due to delay in updating the incident on Damee ",Yes
+2/18/2024,REQ77247,Incident,Yes,User Delay: No answer during the Weekend,Yes
+2/19/2024,REQ77627,Incident,Yes,Request breached SLA due to User unavailability during working hours,Yes
+2/19/2024,REQ77630,Incident,Yes,Request breached SLA due to User unavailability to work on his laptop until the end of the day,Yes
+2/26/2024,REQ78435,Incident,Yes,"The team reached out to inspect the problem several times, but there was no response",Yes
+2/27/2024,REQ78625,WO,No,Service Targets Breached in ERP,Yes
+2/27/2024,REQ78670,Incident,Yes,"Contact was made and it was reported that he was busy in a meeting. An hour later, communication was made and it was reported that he was not available",Yes
+2/29/2024,REQ79134,Incident,Yes,was visited and was in the meeting from 9:15 to 11 and his request was resolved after the meeting,Yes
+2/29/2024,REQ79233,Incident,Yes,"Incident resolved Within SLA, but breached due to delay in updating the incident on Damee ",Yes
+3/3/2024,REQ79457,WO,No,Service Targets Breached in Director ,Yes
+3/3/2024,REQ79511,Incident,Yes,Request breached SLA due to User unavailability to work on his laptop and as requester postpended team to visit him to next day,Yes
+3/5/2024,REQ79746,Incident,No,Cancelled: Test ticket,Yes
+3/5/2024,REQ79842,WO,No,Service Targets Breached in GRC,Yes
+3/6/2024,REQ79998,WO,No,Service Targets Breached in IT Security,Yes
+3/7/2024,REQ80037,Incident,No,Request id related to System Team and there were a delay in the internal communication,Yes
+3/7/2024,REQ80098,Incident,No,Service Targets Breached in Application Ops,Yes
+3/10/2024,REQ80477,WO,No,Service Targets Breached in Network,Yes
+3/11/2024,REQ80512,Incident,No,"The user didn't follow the guides, we already gave him the required permissions and closed the ticket, as first image",Yes
+3/11/2024,REQ80548,Incident,Yes,Request breached SLA due to User unavailability to work on his laptop and as requester postpended team to visit him to next day,Yes
+3/14/2024,REQ80938,Incident,No,"Request breached SLA due to User unavailability, Incident kept pending until it breached the SLA",Yes
+3/14/2024,REQ80944,WO,No,Service Targets Breached in Infrastructure Ops,Yes
+3/14/2024,REQ80972,WO,No,Service Targets Breached in Infrastructure Ops,Yes
+3/17/2024,REQ81185,Incident,No,Service Targets Breached in Application Ops,Yes
+3/19/2024,REQ81505,WO,No,The employee is not available after the manager approves the request,Yes
+3/20/2024,REQ81532,Incident,No,Service Targets Breached in CRM Ops,Yes
+3/20/2024,REQ81539,WO,No,Service Targets Breached due to delay in approval at the Director side,Yes
+3/20/2024,REQ81645,WO,No,"Request breached SLA due to User unavailability, Incident kept pending until it breached the SLA",Yes
+3/21/2024,REQ81819,Incident,No,"Request breached SLA due to User unavailability, Incident kept pending during weekend until it breached the SLA",Yes
+3/22/2024,REQ81855,Incident,No,"Request breached SLA due to User unavailability, Incident kept pending until it breached the SLA",Yes
+3/24/2024,REQ82009,WO,Yes,Service Targets Breached in IT Security,Yes
+3/24/2024,REQ82034,Incident,No,"Request breached SLA due to User unavailability, Incident kept pending until it breached the SLA",Yes
+3/24/2024,REQ82056,Incident,No,"Request breached SLA due to User unavailability, WO kept pending until it breached the SLA, and finally canceled",Yes
+3/24/2024,REQ82059,Incident,Yes,,No
+3/24/2024,REQ82067,WO,No,"The delay was related to the collaboration between other teams, that usually takes sometime, however, the issue is resolved as it was an error with the user configuration",Yes
+3/25/2024,REQ82085,Incident,No,Service Targets Breached in Collaboration,Yes
+3/25/2024,REQ82181,WO,No,"Request breached SLA due to User unavailability, Incident kept pending until it breached the SLA",Yes
+3/26/2024,REQ82199,WO,No,"Delay with the team, notes and instructions dispatched",
+3/26/2024,REQ82232,Incident,No,"Request breached SLA due to User unavailability, Incident kept pending until it breached the SLA",Yes
+3/26/2024,REQ82245,WO,Yes,,No
+3/26/2024,REQ82248,WO,No,"Request breached SLA due to User unavailability, Incident kept pending until it breached the SLA",Yes
+3/26/2024,REQ82249,Incident,No,"Request breached SLA due to User unavailability, Incident kept pending until it breached the SLA",Yes
+3/28/2024,REQ82514,Incident,No,Service Targets Breached in Application Ops,Yes
+4/4/2024,REQ83049,Incident,No,Service Targets Breached in IT Security,Yes
+4/7/2024,REQ83324,WO,No,Service Targets Breached in Director ,Yes
+4/7/2024,REQ83325,WO,No,Service Targets Breached in Director ,Yes
+4/14/2024,REQ83418,Incident,Yes,"Pending Vendor Response instead of Pending Client Response, so the counter didn't stop",Yes
+4/14/2024,REQ83427,Incident,Yes,Request was canceled because it was not a techical issue,Yes
+4/16/2024,REQ83685,WO,No,"Unable to reach to the customer, Request was canceled",Yes
+4/17/2024,REQ83779,Incident,Yes,Service Targets Breached in Collaboration,Yes
+4/22/2024,REQ84807,Incident,No,Test Nexthink,Yes
+4/28/2024,REQ85640,Incident,No,Service Targets Breached in Collaboration,Yes
+4/28/2024,REQ85783,Incident,No,Service Targets Breached in ERP,Yes
+5/2/2024,REQ86806,Incident,No,Service Targets Breached in IT Security,Yes
+5/2/2024,REQ86821,Incident,No,Service Targets Breached in IT Security,Yes
+5/5/2024,REQ87012,Incident,Yes,Request breached SLA due to User unavailability,Yes
+5/5/2024,REQ87029,Incident,Yes,Request breached SLA due to User unavailability,Yes
+5/5/2024,REQ87151,Incident,Yes,Service Targets Breached in Collaboration,Yes
+5/8/2024,REQ87873,Incident,Yes,,No
+5/9/2024,REQ88058,Incident,Yes,Service Targets Breached in Infrastructure,Yes
+5/12/2024,REQ88273,Incident,Yes,Service Targets Breached in Business solutions,Yes
+5/13/2024,REQ88520,Incident,Yes,Service Targets Breached in Collaboration,Yes
+5/15/2024,REQ88755,Incident,No,There is a problem with the ticket,Yes
+5/16/2024,REQ88997,Incident,No,Service Targets Breached in Application Ops,Yes
+5/22/2024,REQ89777,Incident,Yes,"OLA - Service Targets Breached in AppOps, however, we assigned the request there by mistake",Yes
+5/22/2024,REQ89887,Incident,Yes,"OLA - 2 min delay to pend the request, couldn't reach to the User",No
+5/27/2024,REQ90287,WO,No,Service Targets Breached in Network,Yes
+5/30/2024,REQ90906,Incident,Yes,"OLA - 2 min delay to pend the request, couldn't reach to the User",Yes
+5/30/2024,REQ90908,Incident,Yes,"OLA, The user was not reachable",Yes
+6/2/2024,REQ91140,Incident,No,Service Targets Breached in IT Security,Yes
+6/2/2024,REQ91158,Incident,Yes,"OLA, The Agent started to work on the issue without changing the status",Yes
+6/3/2024,REQ91274,Incident,No,Service Targets Breached in Datacenter ,Yes
+6/5/2024,REQ91645,WO,No,Service Targets Breached in IT Security,Yes
+6/11/2024,REQ92835,WO,No,Stop all Electronic Services Contracted Employee,Yes
+6/25/2024,REQ93805,WO,No,SLA Breached in App Ops,Yes
+6/27/2024,REQ94193,Incident,No,Violated at App Ops and Network,Yes
+7/1/2024,REQ94674,Incident,No,Service Targets Breached in Network,Yes
+7/23/2024,REQ97075,Incident,No,Service Targets Breached in Network,Yes
+7/24/2024,REQ97170,WO,No,Service Targets Breached in IT Security,Yes
+7/24/2024,REQ97191,WO,No,Service Targets Breached in IT Security,Yes
+7/30/2024,REQ97645,Incident,No,Service Targets Breached in Network,Yes
+7/31/2024,REQ97860,WO,No,Service Targets Breached in Network,Yes
+8/15/2024,REQ99237,WO,No,Service targets Breached in ERP,Yes
+8/20/2024,REQ99723,WO,No,Service targets Breached in IT Security,Yes
+8/21/2024,REQ99584,Incident,No,Service Targets Breached in IT Security,Yes
+8/21/2024,REQ99834,WO,No,Service Targets Breached in IT Security,Yes
+9/3/2024,REQ101106,Incident,No,Service Targets Breached in Network,Yes
+9/30/2024,REQ103590,Incident,No,,Yes
+10/4/2024,REQ104216,WO,No,,No
+10/6/2024,REQ104335,Incident,Yes,,Yes

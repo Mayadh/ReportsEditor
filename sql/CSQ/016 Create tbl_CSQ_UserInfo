@@ -1,0 +1,140 @@
+SELECT 
+    c.[ID],
+    c.[Node_Session_Seq],
+    c.[OriginatorDN],
+    u.[DisplayName],
+    u.[Department],
+    u.[Title],
+    u.[PostalCode],
+    u.[TelephoneNumber],
+    u.[IPPhone],
+    u.[MobilePhone],
+    CASE
+        -- Internal: Riyadh Site
+        WHEN LEN(c.[OriginatorDN]) = 4 AND (c.[OriginatorDN] LIKE '9%' OR c.[OriginatorDN] LIKE '8%' OR c.[OriginatorDN] LIKE '19%') THEN 'Internal'
+        WHEN LEN(c.[OriginatorDN]) = 11 AND (c.[OriginatorDN] LIKE '50114619%' OR c.[OriginatorDN] LIKE '50114618%') THEN 'Internal'
+        WHEN LEN(c.[OriginatorDN]) = 13 AND (c.[OriginatorDN] LIKE '5050114619%' OR c.[OriginatorDN] LIKE '5050114618%') THEN 'Internal'
+        
+        -- External: Central Region
+        WHEN LEN(c.[OriginatorDN]) = 11 AND c.[OriginatorDN] LIKE '5011%' THEN 'External'
+        
+        -- Internal: Jeddah Site
+        WHEN LEN(c.[OriginatorDN]) = 4 AND c.[OriginatorDN] LIKE '3%' THEN 'Internal'
+        WHEN LEN(c.[OriginatorDN]) = 11 AND c.[OriginatorDN] LIKE '501226397%' THEN 'Internal'
+        
+        -- External: Western Region
+        WHEN LEN(c.[OriginatorDN]) = 11 AND c.[OriginatorDN] LIKE '5012%' THEN 'External'
+        
+        -- Internal: Dammam Site
+        WHEN LEN(c.[OriginatorDN]) = 4 AND c.[OriginatorDN] LIKE '12%' THEN 'Internal'
+        
+        -- External: Eastern Region
+        WHEN LEN(c.[OriginatorDN]) = 11 AND c.[OriginatorDN] LIKE '5013%' THEN 'External'
+        
+        -- External: Northern Borders Region
+        WHEN LEN(c.[OriginatorDN]) = 11 AND c.[OriginatorDN] LIKE '5014%' THEN 'External'
+        
+        -- Internal: Abha Site
+        WHEN LEN(c.[OriginatorDN]) = 4 AND c.[OriginatorDN] LIKE '6%' THEN 'Internal'
+        
+        -- External: Southern Regions
+        WHEN LEN(c.[OriginatorDN]) = 11 AND c.[OriginatorDN] LIKE '5017%' THEN 'External'
+        
+        -- External: Mobile
+        WHEN LEN(c.[OriginatorDN]) = 10 AND c.[OriginatorDN] LIKE '05%' THEN 'External'
+        WHEN LEN(c.[OriginatorDN]) = 11 AND c.[OriginatorDN] LIKE '505%' THEN 'External'
+        WHEN LEN(c.[OriginatorDN]) = 9 AND c.[OriginatorDN] LIKE '5%' THEN 'External'
+        
+        -- External: International
+        WHEN LEN(c.[OriginatorDN]) > 13 THEN 'External'
+        
+        -- Default: Unknown
+        ELSE 'Unknown'
+    END AS [Location],
+    CASE
+        -- Internal: Riyadh Site
+        WHEN LEN(c.[OriginatorDN]) = 4 AND (c.[OriginatorDN] LIKE '9%' OR c.[OriginatorDN] LIKE '8%' OR c.[OriginatorDN] LIKE '19%') THEN 'Riyadh Site'
+        WHEN LEN(c.[OriginatorDN]) = 11 AND (c.[OriginatorDN] LIKE '50114619%' OR c.[OriginatorDN] LIKE '50114618%') THEN 'Riyadh Site'
+        WHEN LEN(c.[OriginatorDN]) = 13 AND (c.[OriginatorDN] LIKE '5050114619%' OR c.[OriginatorDN] LIKE '5050114618%') THEN 'Riyadh Site'
+        
+        -- External: Central Region
+        WHEN LEN(c.[OriginatorDN]) = 11 AND c.[OriginatorDN] LIKE '5011%' THEN 'Central Region'
+        
+        -- Internal: Jeddah Site
+        WHEN LEN(c.[OriginatorDN]) = 4 AND c.[OriginatorDN] LIKE '3%' THEN 'Jeddah Site'
+        WHEN LEN(c.[OriginatorDN]) = 11 AND c.[OriginatorDN] LIKE '501226397%' THEN 'Jeddah Site'
+        
+        -- External: Western Region
+        WHEN LEN(c.[OriginatorDN]) = 11 AND c.[OriginatorDN] LIKE '5012%' THEN 'Western Region'
+        
+        -- Internal: Dammam Site
+        WHEN LEN(c.[OriginatorDN]) = 4 AND c.[OriginatorDN] LIKE '12%' THEN 'Dammam Site'
+        
+        -- External: Eastern Region
+        WHEN LEN(c.[OriginatorDN]) = 11 AND c.[OriginatorDN] LIKE '5013%' THEN 'Eastern Region'
+        
+        -- External: Northern Borders Region
+        WHEN LEN(c.[OriginatorDN]) = 11 AND c.[OriginatorDN] LIKE '5014%' THEN 'Northern Borders Region'
+        
+        -- Internal: Abha Site
+        WHEN LEN(c.[OriginatorDN]) = 4 AND c.[OriginatorDN] LIKE '6%' THEN 'Abha Site'
+        
+        -- External: Southern Regions
+        WHEN LEN(c.[OriginatorDN]) = 11 AND c.[OriginatorDN] LIKE '5017%' THEN 'Southern Regions'
+        
+        -- External: Mobile
+        WHEN LEN(c.[OriginatorDN]) = 10 AND c.[OriginatorDN] LIKE '05%' THEN 'Mobile'
+        WHEN LEN(c.[OriginatorDN]) = 11 AND c.[OriginatorDN] LIKE '505%' THEN 'Mobile'
+        WHEN LEN(c.[OriginatorDN]) = 9 AND c.[OriginatorDN] LIKE '5%' THEN 'Mobile'
+        
+        -- External: International
+        WHEN LEN(c.[OriginatorDN]) > 13 THEN 'International'
+        
+        -- Default: Unknown
+        ELSE 'Unknown'
+    END AS [Site],
+    CASE
+        -- Riyadh
+        WHEN (LEN(c.[OriginatorDN]) = 4 AND (c.[OriginatorDN] LIKE '9%' OR c.[OriginatorDN] LIKE '8%' OR c.[OriginatorDN] LIKE '19%'))
+             OR (LEN(c.[OriginatorDN]) = 11 AND (c.[OriginatorDN] LIKE '50114619%' OR c.[OriginatorDN] LIKE '50114618%'))
+             OR (LEN(c.[OriginatorDN]) = 13 AND (c.[OriginatorDN] LIKE '5050114619%' OR c.[OriginatorDN] LIKE '5050114618%'))
+             OR (LEN(c.[OriginatorDN]) = 11 AND c.[OriginatorDN] LIKE '5011%') THEN 'Riyadh'
+        
+        -- Jeddah
+        WHEN (LEN(c.[OriginatorDN]) = 4 AND c.[OriginatorDN] LIKE '3%')
+             OR (LEN(c.[OriginatorDN]) = 11 AND c.[OriginatorDN] LIKE '501226397%')
+             OR (LEN(c.[OriginatorDN]) = 11 AND c.[OriginatorDN] LIKE '5012%') THEN 'Jeddah'
+        
+        -- Dammam
+        WHEN (LEN(c.[OriginatorDN]) = 4 AND c.[OriginatorDN] LIKE '12%')
+             OR (LEN(c.[OriginatorDN]) = 11 AND c.[OriginatorDN] LIKE '5013%') THEN 'Dammam'
+        
+        -- Arar
+        WHEN LEN(c.[OriginatorDN]) = 11 AND c.[OriginatorDN] LIKE '5014%' THEN 'Arar'
+        
+        -- Abha
+        WHEN (LEN(c.[OriginatorDN]) = 4 AND c.[OriginatorDN] LIKE '6%')
+             OR (LEN(c.[OriginatorDN]) = 11 AND c.[OriginatorDN] LIKE '5017%') THEN 'Abha'
+        
+        -- Default: N/A
+        ELSE 'N/A'
+    END AS [City],
+    CASE
+        -- Saudi Arabia
+        WHEN (LEN(c.[OriginatorDN]) IN (4, 9, 10, 11, 13) AND c.[OriginatorDN] LIKE '[0-9]%') THEN 'Saudi Arabia'
+        
+        -- International
+        WHEN LEN(c.[OriginatorDN]) > 13 THEN 'N/A'
+        
+        -- Default: N/A
+        ELSE 'N/A'
+    END AS [Country]
+INTO [ReportsDB].[dbo].[tbl_CSQ_UserInfo]
+FROM 
+    [ReportsDB].[dbo].[tbl_CSQ] c
+LEFT JOIN 
+    [ReportsDB].[dbo].[tbl_ADUsers] u
+ON 
+    c.[OriginatorDN] = u.[TelephoneNumber]
+    OR c.[OriginatorDN] = u.[IPPhone]
+    OR c.[OriginatorDN] = u.[MobilePhone];

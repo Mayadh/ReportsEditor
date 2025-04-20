@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSQ Violations Missing Justifications</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts-csq.js" defer></script>
+</head>
+<body>
+    <h1>CSQ Violations Missing Justifications</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Node Session Seq</th>
+                <th>Violation ABD</th>
+                <th>Violation ABD Reason</th>
+                <th>Violation ABD Approval</th>
+                <th>Violation Ring</th>
+                <th>Violation Ring Reason</th>
+                <th>Violation Ring Approval</th>
+                <th>Violation CallSurvey</th>
+                <th>Violation CallSurvey Reason</th>
+                <th>Violation CallSurvey Approval</th>
+                <th>Call Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be populated here -->
+        </tbody>
+    </table>
+    <button onclick="submitChanges()">Submit</button>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => fetchData('/api/csq-violations-missing', 'table'));
+    </script>
+</body>
+</html>

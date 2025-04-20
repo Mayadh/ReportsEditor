@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All REQ Violations</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts-req.js" defer></script>
+</head>
+<body>
+    <h1>All REQ Violations</h1>
+    <table>
+        <thead>
+            <tr>
+                <!-- Add table headers dynamically based on the data fetched -->
+                <th>ID</th>
+                <th>Request Number</th>
+                <th>Submit Date</th>
+                <th>Violation SLM</th>
+                <th>Violation Reason</th>
+                <th>Violation Approval</th>  
+                <th>Violation ReqSurvey </th>
+                <th>REQ survey Reason</th>
+                <th>REQ survey Approval</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be populated here -->
+        </tbody>
+    </table>
+    <button onclick="submitChanges()">Submit</button>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => fetchData('/api/req-violations-all', 'table'));
+    </script>
+</body>
+</html>

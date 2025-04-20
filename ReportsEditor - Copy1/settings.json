@@ -1,0 +1,6 @@
+{
+    // ...existing settings...
+    "mssql.resultsPaneLocation": "current",
+    "mssql.query.displayResultInEditor": true
+    // ...existing settings...
+}

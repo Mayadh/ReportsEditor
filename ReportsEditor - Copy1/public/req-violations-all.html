@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All REQ Violations</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts-req.js" defer></script>
+</head>
+<body>
+    <h1>All REQ Violations</h1>
+    <table>
+        <thead>
+            <tr>
+                <!-- Add table headers dynamically based on the data fetched -->
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be populated here -->
+        </tbody>
+    </table>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => fetchData('/api/req-violations-all', 'table'));
+    </script>
+</body>
+</html>
